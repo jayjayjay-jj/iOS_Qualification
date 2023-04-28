@@ -35,15 +35,22 @@ class RegisterViewController: UIViewController {
         newUser.setValue(password, forKey: "password")
         
         
-        do {
-            try context.save()
-            
-            if let nextView = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") {
-                navigationController?.pushViewController(nextView, animated: true)
+        if username.isEmpty == false && email.isEmpty == false && password.isEmpty == false && confirmPass.isEmpty == false {
+            if password.count > 3 {
+                do {
+                    try context.save()
+                    
+                    if let nextView = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") {
+                        navigationController?.pushViewController(nextView, animated: true)
+                    }
+                } catch {
+                    print("Insert User Failed")
+                }
+            } else {
+                print("Password length must be more than 3")
             }
-        }
-        catch {
-            print("Register failed")
+        } else {
+            print("Field(s) can't be empty")
         }
     }
     

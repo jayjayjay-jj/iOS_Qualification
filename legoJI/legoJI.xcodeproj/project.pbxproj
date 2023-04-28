@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05279BAF29FBEB48002F7DD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05279BAE29FBEB48002F7DD3 /* HomeViewController.swift */; };
 		05378E1929FA707B007586BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05378E1829FA707B007586BF /* AppDelegate.swift */; };
 		05378E1B29FA707B007586BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05378E1A29FA707B007586BF /* SceneDelegate.swift */; };
 		05378E1D29FA707B007586BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05378E1C29FA707B007586BF /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05279BAE29FBEB48002F7DD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		05378E1529FA707B007586BF /* legoJI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legoJI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05378E1829FA707B007586BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05378E1A29FA707B007586BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				05378E5029FA8C6B007586BF /* LoginViewController.swift */,
 				05378E5229FA8C9C007586BF /* RegisterViewController.swift */,
+				05279BAE29FBEB48002F7DD3 /* HomeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				05378E1929FA707B007586BF /* AppDelegate.swift in Sources */,
 				05378E5329FA8C9C007586BF /* RegisterViewController.swift in Sources */,
 				05378E5129FA8C6B007586BF /* LoginViewController.swift in Sources */,
+				05279BAF29FBEB48002F7DD3 /* HomeViewController.swift in Sources */,
 				05378E1B29FA707B007586BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

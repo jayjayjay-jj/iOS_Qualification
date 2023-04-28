@@ -32,10 +32,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="legoJI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omV-Ba-ShY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omV-Ba-ShY">
                                 <rect key="frame" x="139" y="399" width="115.33333333333331" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="legoJI">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="45"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xl-4p-NBf">
@@ -43,7 +48,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
-                                    <segue destination="SBh-LR-ylc" kind="show" id="tQx-c6-GJT"/>
+                                    <segue destination="SBh-LR-ylc" kind="show" id="Uf5-ZM-xu4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdT-cp-ckb">
@@ -51,23 +56,30 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
-                                    <segue destination="Mrj-Ab-QWg" kind="show" id="ppX-4f-zxp"/>
+                                    <segue destination="Mrj-Ab-QWg" kind="show" id="FWB-D9-dZ4"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="z9p-PP-wzP">
+                                <rect key="frame" x="78" y="0.0" width="240" height="573"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xl-4p-NBf" secondAttribute="trailing" constant="75" id="086-XZ-K6a"/>
+                            <constraint firstItem="1xl-4p-NBf" firstAttribute="top" secondItem="z9p-PP-wzP" secondAttribute="bottom" constant="15" id="7xK-0t-wJn"/>
                             <constraint firstItem="1xl-4p-NBf" firstAttribute="top" secondItem="omV-Ba-ShY" secondAttribute="bottom" constant="135" id="AdX-wj-glI"/>
                             <constraint firstItem="omV-Ba-ShY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dmg-tx-6Fe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z9p-PP-wzP" secondAttribute="trailing" constant="75" id="EB6-tX-R2K"/>
                             <constraint firstItem="ZdT-cp-ckb" firstAttribute="top" secondItem="1xl-4p-NBf" secondAttribute="bottom" constant="50" id="NBk-08-TDC"/>
                             <constraint firstItem="ZdT-cp-ckb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="UMv-6C-IUU"/>
+                            <constraint firstItem="z9p-PP-wzP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="at0-VH-vaV"/>
                             <constraint firstItem="omV-Ba-ShY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRo-im-vtD"/>
                             <constraint firstItem="1xl-4p-NBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJ4-K9-WUn"/>
                             <constraint firstItem="1xl-4p-NBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="hGh-lu-7Nd"/>
                             <constraint firstItem="ZdT-cp-ckb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hnw-TM-Epw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZdT-cp-ckb" secondAttribute="trailing" constant="75" id="m0n-o7-yZ7"/>
+                            <constraint firstItem="z9p-PP-wzP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="rgo-MO-YjG"/>
                             <constraint firstItem="omV-Ba-ShY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xF0-Uu-Xo6"/>
                         </constraints>
                     </view>
@@ -92,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="1764" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="PRF-xj-f85">
             <objects>
-                <viewController id="thK-vG-fw6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="thK-vG-fw6" customClass="HomeViewController" customModule="legoJI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NNC-xM-5Uf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +210,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-DO-AMa">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-DO-AMa">
                                 <rect key="frame" x="75" y="465" width="243" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -207,11 +219,14 @@
                                 <rect key="frame" x="75" y="643" width="243" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="SBh-LR-ylc" eventType="touchUpInside" id="GFr-s0-iIf"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pQH-h4-lEv">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pQH-h4-lEv">
                                 <rect key="frame" x="75" y="534" width="243" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4nc-rM-H1f"/>
@@ -232,6 +247,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oSH-jP-VUg"/>
+                    <connections>
+                        <outlet property="passwordTxt" destination="pQH-h4-lEv" id="liz-Fc-wHG"/>
+                        <outlet property="usernameTxt" destination="S9h-DO-AMa" id="EJp-uV-XqR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBJ-1W-tK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +258,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
