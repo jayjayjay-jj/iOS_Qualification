@@ -13,7 +13,13 @@ class LegoTableViewCell: UITableViewCell {
     
     @IBOutlet var priceTxt: UITextField!
     
+    @IBOutlet var descTxt: UITextField!
+    
     var updateHandler = {
+        
+    }
+    
+    var deleteHandler = {
         
     }
     
@@ -23,6 +29,7 @@ class LegoTableViewCell: UITableViewCell {
     
     
     @IBAction func deleteBtn(_ sender: Any) {
+        deleteHandler()
     }
     
     override func awakeFromNib() {

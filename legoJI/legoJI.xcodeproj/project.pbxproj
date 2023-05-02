@@ -20,6 +20,7 @@
 		05378E3F29FA707D007586BF /* legoJIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05378E3E29FA707D007586BF /* legoJIUITestsLaunchTests.swift */; };
 		05378E5129FA8C6B007586BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05378E5029FA8C6B007586BF /* LoginViewController.swift */; };
 		05378E5329FA8C9C007586BF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05378E5229FA8C9C007586BF /* RegisterViewController.swift */; };
+		05D7B3032A00B768007B5FFE /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D7B3022A00B768007B5FFE /* AboutUsViewController.swift */; };
 		05F4E88429FD1D010080FE00 /* LegoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F4E88329FD1D010080FE00 /* LegoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		05378E3E29FA707D007586BF /* legoJIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legoJIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05378E5029FA8C6B007586BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05378E5229FA8C9C007586BF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		05D7B3022A00B768007B5FFE /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		05F4E88329FD1D010080FE00 /* LegoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				05378E5229FA8C9C007586BF /* RegisterViewController.swift */,
 				05279BAE29FBEB48002F7DD3 /* HomeViewController.swift */,
 				05F4E88329FD1D010080FE00 /* LegoTableViewCell.swift */,
+				05D7B3022A00B768007B5FFE /* AboutUsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D7B3032A00B768007B5FFE /* AboutUsViewController.swift in Sources */,
 				05378E1D29FA707B007586BF /* ViewController.swift in Sources */,
 				05378E2329FA707B007586BF /* legoJI.xcdatamodeld in Sources */,
 				05378E1929FA707B007586BF /* AppDelegate.swift in Sources */,
